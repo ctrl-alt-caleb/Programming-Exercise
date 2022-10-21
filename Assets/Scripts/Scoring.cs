@@ -25,6 +25,7 @@ public class Scoring : MonoBehaviour
         if (leftScore + rightScore == maxScore) //if max "score" of 10 is reached-- try again menu appears
         {
             playAgainMenu.SetActive(true);
+            Time.timeScale = 0; //freezes scene
         }
     }
 }

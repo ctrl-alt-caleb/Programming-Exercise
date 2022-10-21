@@ -18,6 +18,7 @@ public class PlayAgainScript : MonoBehaviour
         leftScoreText.text = Scoring.leftScore.ToString();
         rightScoreText.text = Scoring.rightScore.ToString();
         SceneManager.LoadScene("Main");
+        Time.timeScale = 1; 
     }
 
     public void QuitGame() // closes application
