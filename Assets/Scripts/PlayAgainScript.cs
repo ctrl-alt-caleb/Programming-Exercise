@@ -24,7 +24,7 @@ public class PlayAgainScript : MonoBehaviour
     public void QuitGame() // closes application
     {
         Debug.Log("Quitting game...");
-        Application.Quit();
+        Application.Quit(); // my webGL builds seem to freeze when using Application.Quit(). never an issue on windows-- I'd love to know why that is/a better way to handle this
     }
 }
 
