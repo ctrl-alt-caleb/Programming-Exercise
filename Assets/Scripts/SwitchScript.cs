@@ -34,7 +34,7 @@ public class SwitchScript : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
         Debug.Log("OnEndDrag");
         if (!playAgainMenu.activeSelf)
         {
-            if (Input.mousePosition.y > 325) //arbitrary value roughly in the middle of the switch body-- if greater, switch flips
+            if (Input.mousePosition.y > 585) //value roughly in the middle of the switch body-- if mouse is higher on button release, switch flips
             {
                 Debug.Log(Input.mousePosition.y);
 
